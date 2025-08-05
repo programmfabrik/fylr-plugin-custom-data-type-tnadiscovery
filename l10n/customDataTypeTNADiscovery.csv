@@ -1,0 +1,40 @@
+key,de-DE,en-US
+custom.data.type.tnadiscovery.edit.no_tnadiscovery,Keine TNA-Discovery-Verknüpfung gesetzt,No TNA-Discovery-Link
+custom.data.type.tnadiscovery.edit.no_valid_tnadiscovery,Keine valide TNA-Discovery-Verknüpfung,No valid TNA-Discovery-Link
+custom.data.type.tnadiscovery.modal.form.text.count,Anzahl Vorschläge,Count of suggestions
+custom.data.type.tnadiscovery.modal.form.text.label,Text,Text
+custom.data.type.tnadiscovery.modal.form.text.searchbar,Suchbegriff eingeben,Enter search query
+custom.data.type.tnadiscovery.modal.form.text.searchbar.placeholder,Suchbegriff eingeben ...,Enter search query...
+custom.data.type.tnadiscovery.modal.form.text.type,Suche auf Typ einschränken,Narrow down search to type
+custom.data.type.tnadiscovery.name,TNA-Discovery-Verknüpfung,TNA-Discovery-Link
+custom.data.type.tnadiscovery.url.tooltip,zu **%(name)s** springen,jump to **%(name)s**
+custom.data.type.tnadiscovery.config.parameter.schema.schema.value.label,Schema,Scheme
+custom.data.type.tnadiscovery.config.parameter.mask.infopop.info.label,Informationen über den Datensatz,Informations about the record
+custom.data.type.tnadiscovery.config.parameter.mask.infopop.labels.preflabel,Bezeichnung,Preferred label
+custom.data.type.tnadiscovery.config.parameter.mask.infopop.labels.varlabel,Variante,Variant
+custom.data.type.tnadiscovery.config.parameter.mask.infopop.labels.uri,Identifier,Identifier
+custom.data.type.tnadiscovery.config.parameter.mask.infopop.labels.broader,Umfassendere Begriffe,Broader Terms
+custom.data.type.tnadiscovery.config.parameter.mask.editor_display.value.label,Editor-Ansicht,Editor-Display
+custom.data.type.tnadiscovery.config.option.mask.editor_display.value.default,Standard,Default
+custom.data.type.tnadiscovery.config.option.mask.editor_display.value.condensed,1 Zeile,One-liner
+custom.data.type.tnadiscovery.edit.button|icon,edit,edit
+custom.data.type.tnadiscovery.remove.button|icon,trash,trash
+custom.data.type.tnadiscovery.modal.form.url.placeholder,TNA-Discovery-Verknüpfung,TNA-Discovery-Link
+custom.data.type.tnadiscovery.modal.form.text.countX,Vorschläge,Suggestions
+custom.data.type.tnadiscovery.modal.form.text.result.label,Gewählter Eintrag,Choosen entry
+custom.data.type.tnadiscovery.modal.form.text.result.placeholder,noch leer,empty
+custom.data.type.tnadiscovery.modal.form.text.uri.label,Zugehörige URI,Choosen URI
+custom.data.type.tnadiscovery.modal.form.text.uri.label.placeholder,noch leer,empty
+custom.data.type.tnadiscovery.modal.form.title.label,Titel,Title
+custom.data.type.tnadiscovery.modal.form.refnumber.label,Referenz-Nummer,ReferenceNumber
+custom.data.type.tnadiscovery.modal.form.url.label,TNA-Discovery-URL,TNA-Discovery-URL
+custom.data.type.tnadiscovery.modal.form.location.label,Aufbewahrungsort,LocationHeld
+custom.data.type.tnadiscovery.modal.form.id.label,ID,ID
+custom.data.type.tnadiscovery.modal.form.description.label,Beschreibung,Description
+custom.data.type.tnadiscovery.modal.form.text.loading,lade Informationen,loading information
+server.config.name.system.update_tnadiscovery,TNA-Discovery-Update-Einstellungen,TNA-Discovery-Update-Configuration
+server.config.parameter.system.update_tnadiscovery.restrict_time.label,Beschränke Updates auf bestimmte Stunden?,Restrict updates to specific hours?
+server.config.parameter.system.update_tnadiscovery.restrict_time.checkbox,Ja - beschränken,Yes - restrict
+server.config.parameter.system.update_tnadiscovery.from_time.label,Stunde von (Zahl 0-24),Hour from (Int 0-24)
+server.config.parameter.system.update_tnadiscovery.to_time.label,Stunde bis (Zahl 0-24),Hour to (Int 0-24)
+server.config.parameter.system.update_tnadiscovery.default_language.label,Standard-Datensprache als Fallback für Update (ISO 639-1),Default-data-language (as fallback) for update (ISO 639-1)
