@@ -52,7 +52,7 @@ class TNADiscoveryUtil
       databaseLanguages = ez5.loca.getDatabaseLanguages()
 
     _standard = 
-      text:  jsonValue.title
+      text:  object.title
       l10ntext: {}
     
     l10nObject = {}
@@ -65,7 +65,7 @@ class TNADiscoveryUtil
     #  give l10n-languages the easydb-language-syntax
     for l10nObjectKey, l10nObjectValue of l10nObject
       # add to l10n
-      l10nObject[l10nObjectKey] = jsonValue.title
+      l10nObject[l10nObjectKey] = object.title
 
     _standard.l10ntext = l10nObject
 
