@@ -163,8 +163,8 @@ class CustomDataTypeTNADiscovery extends CustomDataTypeWithCommonsAsPlugin
                 cdata.conceptURI = jsonValue.discoveryURL
 
                 # _standard & _fulltext
-                cdata._fulltext = LocUtil.getFullTextFromLocJSON jsonValue, false
-                cdata._standard = LocUtil.getStandardFromLocJSON that, jsonValue, cdata, false
+                cdata._fulltext = TNADiscoveryUtil.getFullTextFromTNADiscoveryJSON jsonValue, false
+                cdata._standard = TNADiscoveryUtil.getStandardFromTNADiscoveryJSON that, jsonValue, cdata, false
 
                 # update the layout in form
                 that.__updateResult(cdata, layout, opts)
@@ -317,9 +317,8 @@ class CustomDataTypeTNADiscovery extends CustomDataTypeWithCommonsAsPlugin
           locationHeld : cdata.locationHeld.trim()
           title : cdata.title.trim()
           description : cdata.description.trim()
-          #_fulltext:
-          #        text: cdata.title.trim() + ' ' + cdata.description.trim() + ' ' + cdata.referenceNumber.trim() + ' ' + cdata.discoveryID.trim()
-          #        string: cdata.title.trim() + ' ' + cdata.description.trim() + ' ' + cdata.referenceNumber.trim() + ' ' + cdata.discoveryID.trim()
+          _fulltext: TNADiscoveryUtil.getFullTextFromTNADiscoveryJSON cdata, false
+          _standard: TNADiscoveryUtil.getStandardFromTNADiscoveryJSON that, cdata, cdata, false
 
 
   #######################################################################
