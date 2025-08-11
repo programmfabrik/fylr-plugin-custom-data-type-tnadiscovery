@@ -181,7 +181,7 @@ main = (payload) => {
               // save referenceNumber
               newCdata.referenceNumber = resultObject.citableReference
               // save locationHeld
-              newCdata.locationHeld = resultObject.heldBy[0]
+              newCdata.locationHeld = resultObject.heldBy[0] ? resultObject.heldBy[0].xReferenceName : null
               // save resultObject
               newCdata.title = resultObject.title
               // save description + remove html tags
