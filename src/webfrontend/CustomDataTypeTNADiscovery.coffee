@@ -318,7 +318,7 @@ class CustomDataTypeTNADiscovery extends CustomDataTypeWithCommonsAsPlugin
           title : cdata.title.trim()
           description : cdata.description.trim()
           _fulltext: TNADiscoveryUtil.getFullTextFromTNADiscoveryJSON cdata, false
-          _standard: TNADiscoveryUtil.getStandardFromTNADiscoveryJSON that, cdata, cdata, false
+          _standard: TNADiscoveryUtil.getStandardFromTNADiscoveryJSON @, cdata, cdata, false
 
 
   #######################################################################
