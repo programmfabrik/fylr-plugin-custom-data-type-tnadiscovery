@@ -92,7 +92,15 @@ class TNADiscoveryUtil
       l10nObject[language] = ''
 
     # preflabel to all languages
-    fullTextString += object.discoveryID + ' ' + object.title + ' ' + object.description + ' ' + object.referenceNumber + ' ' + object.locationHeld
+    fullTextString += object.discoveryID 
+    if(object.title)
+      fullTextString += ' ' + object.title 
+    if(object.description)
+      fullTextString +=' ' + object.description 
+    if(object.referenceNumber)
+      fullTextString +=' ' + object.referenceNumber 
+    if(object.locationHeld)
+      fullTextString +=' ' + object.locationHeld
 
     for l10nObjectKey, l10nObjectValue of l10nObject
       l10nObject[l10nObjectKey] = fullTextString

@@ -179,13 +179,13 @@ main = (payload) => {
               // save discoveryURL
               newCdata.discoveryURL = 'http://discovery.nationalarchives.gov.uk/details/r/' + resultObject.id
               // save referenceNumber
-              newCdata.referenceNumber = resultObject.citableReference
+              newCdata.referenceNumber = resultObject.citableReference ?? ''
               // save locationHeld
               newCdata.locationHeld = resultObject.heldBy[0] ? resultObject.heldBy[0].xReferenceName : null
               // save resultObject
-              newCdata.title = resultObject.title
+              newCdata.title = resultObject.title ?? ''
               // save description + remove html tags
-              newCdata.description = resultObject.scopeContent.description.replace(/<\/?[^>]+(>|$)/g, "")
+              newCdata.description = resultObject.scopeContent?.description?.replace(/<\/?[^>]+(>|$)/g, "") ?? ''
               // save conceptName
               newCdata.conceptName = resultObject.citableReference;
               // save conceptURI
@@ -196,7 +196,7 @@ main = (payload) => {
               newCdata._standard = TNADiscoveryUtil.getStandardFromTNADiscoveryJSON(null, newCdata, newCdata, databaseLanguages);
               if (hasChanges(payload.objects[index].data, newCdata)) {
                 payload.objects[index].data = newCdata;
-              } else { }
+              }
             }
           } else {
             console.error('No matching record found');
