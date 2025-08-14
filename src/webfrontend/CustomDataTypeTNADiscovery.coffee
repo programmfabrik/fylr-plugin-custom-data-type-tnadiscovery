@@ -134,6 +134,7 @@ class CustomDataTypeTNADiscovery extends CustomDataTypeWithCommonsAsPlugin
                 listStr = listStr.substring(0,55)+' ...';
 
               do(key) ->
+                suggestionId = suggestion.id
                 item =
                   text: listStr
                   value: jsonStrValue
@@ -141,7 +142,7 @@ class CustomDataTypeTNADiscovery extends CustomDataTypeWithCommonsAsPlugin
                     markdown: true
                     placement: "e"
                     content: (tooltip) ->
-                      that.__getAdditionalTooltipInfo(suggestion.id, tooltip, extendedInfo_xhr)
+                      that.__getAdditionalTooltipInfo(suggestionId, tooltip, extendedInfo_xhr)
                       new CUI.Label(icon: "spinner", text: $$('custom.data.type.tnadiscovery.modal.form.text.loading'))
                 menu_items.push item
 
