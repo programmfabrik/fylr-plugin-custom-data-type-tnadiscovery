@@ -251,16 +251,16 @@ outputErr = (err2) => {
   ////////////////////////////////////////////////////////////////////////////
   // check if hour-restriction is set
   ////////////////////////////////////////////////////////////////////////////
-  if (info?.config?.plugin?.['custom-data-type-dante']?.config?.update_dante?.restrict_time === true) {
-    dante_config = info.config.plugin['custom-data-type-dante'].config.update_dante;
+  if (info?.config?.plugin?.['custom-data-type-tnadiscovery']?.config?.update_tnadiscovery?.restrict_time === true) {
+    tnadiscovery_config = info.config.plugin['custom-data-type-tnadiscovery'].config.update_tnadiscovery;
 
     // check if hours are configured
-    if (dante_config?.from_time !== false && dante_config?.to_time !== false) {
+    if (tnadiscovery_config?.from_time !== false && tnadiscovery_config?.to_time !== false) {
       const now = new Date();
       const hour = now.getHours();
 
       // check if hours do not match
-      if (!isInTimeRange(hour, dante_config.from_time, dante_config.to_time)) {
+      if (!isInTimeRange(hour, tnadiscovery_config.from_time, tnadiscovery_config.to_time)) {
         // exit if hours do not match
         outputData({
           "state": {
