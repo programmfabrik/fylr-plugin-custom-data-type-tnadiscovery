@@ -48,7 +48,7 @@ There is no custom configuration yet.
 
 ## sources
 
-The source code of this plugin is managed in a git repository at <https://github.com/programmfabrik/easydb-custom-data-type-tnadiscovery>.
+The source code of this plugin is managed in a git repository at <https://github.com/programmfabrik/fylr-plugin-custom-data-type-tnadiscovery>.
 
 ## updater
 Note: The automatic updater is implemented and can be configured in the baseconfig. You need to enable the "custom-data-type"-update-service globally too.
