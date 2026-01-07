@@ -57,7 +57,7 @@ class CustomDataTypeTNADiscovery extends CustomDataTypeWithCommonsAsPlugin
 
     # start new request to tnadiscovery-API
     # http://C3218935
-    extendedInfo_xhr.xhr = new (CUI.XHR)(url: location.protocol + '//jsontojsonp.gbv.de/?url=http%3A%2F%2Fdiscovery.nationalarchives.gov.uk%2FAPI%2Frecords%2Fv1%2Fdetails%2F' + uri)
+    extendedInfo_xhr.xhr = new (CUI.XHR)(url: 'https://jsontojsonp.gbv.de/?url=http%3A%2F%2Fdiscovery.nationalarchives.gov.uk%2FAPI%2Frecords%2Fv1%2Fdetails%2F' + uri)
     extendedInfo_xhr.xhr.start()
     .done((data, status, statusText) ->
       htmlContent = ''
@@ -110,7 +110,7 @@ class CustomDataTypeTNADiscovery extends CustomDataTypeWithCommonsAsPlugin
             searchsuggest_xhr.xhr.abort()
 
         # start new request
-        url = location.protocol + '//jsontojsonp.gbv.de/?url=http%3A%2F%2Fdiscovery.nationalarchives.gov.uk%2FAPI%2Fsearch%2Fv1%2Frecords%3Fsps.searchQuery%3D' + tnadiscovery_searchstring + '%26sps.sortByOption%3DRELEVANCE%26sps.resultsPageSize%3D' + tnadiscovery_countSuggestions
+        url = 'https://jsontojsonp.gbv.de/?url=http%3A%2F%2Fdiscovery.nationalarchives.gov.uk%2FAPI%2Fsearch%2Fv1%2Frecords%3Fsps.searchQuery%3D' + tnadiscovery_searchstring + '%26sps.sortByOption%3DRELEVANCE%26sps.resultsPageSize%3D' + tnadiscovery_countSuggestions
         searchsuggest_xhr.xhr = new (CUI.XHR)(url: url)
         searchsuggest_xhr.xhr.start().done((data, status, statusText) ->
 
