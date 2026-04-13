@@ -290,7 +290,7 @@ outputErr = (err2) => {
       // availabilityCheck for TNA-Discovery-api
       ////////////////////////////////////////////////////////////////////////////
 
-      const testURL = "https://discovery.nationalarchives.gov.uk/API/search/v1/records?sps.sortByOption=RELEVANCE&sps.resultsPageSize=1"
+      const testURL = "https://discovery.nationalarchives.gov.uk/API/search/v1/records?sps.searchQuery=*&sps.sortByOption=RELEVANCE&sps.resultsPageSize=1"
       const options = {
         headers: {
           Accept: 'application/json',
