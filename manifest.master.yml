@@ -24,18 +24,24 @@ custom_types:
         type: text
       conceptURI:
         type: text
+        skipTerms: true
       discoveryURL:
         type: text
+        skipTerms: true
       referenceNumber:
         type: text
       locationHeld:
         type: text
+        skipTerms: true
       title:
         type: text
+        skipTerms: true
       description:
         type: text
+        skipTerms: true
       facetTerm:
         type: text_l10n
+        skipTerms: true
     config:
       schema:
       mask:
