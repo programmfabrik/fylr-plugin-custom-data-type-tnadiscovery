@@ -6,15 +6,29 @@ plugin:
     de-DE: tnadiscovery-Verknüpfung
     en-US: tnadiscovery-Referencing
   info:
-    de-DE: Stellt Verknüpfungen mit den Discovery-System des National Archive London her.
-    en-US: Use for references to entities of the discoverydystem of the National Archive London.
+    de-DE: |
+      Ergänzt einen benutzerdefinierten Datentyp, mit dem sich fylr-Datensätze mit Archiveinträgen des Discovery-Systems der National Archives in London verknüpfen lassen. Bei der Eingabe schlägt das Feld passende Einträge aus der Discovery-API vor und übernimmt deren Referenzangaben für eine konsistente Normdatenführung.
+
+      - Vorschläge während der Eingabe über die Discovery-API
+      - Speichert bevorzugte Bezeichnung, Concept-URI sowie Discovery-ID/-URL
+      - Erfasst Referenznummer, Aufbewahrungsort, Titel und Beschreibung
+
+      Bindet das [Discovery-System der National Archives](http://discovery.nationalarchives.gov.uk/) an.
+    en-US: |
+      Adds a custom data type for linking fylr records to archival entities in the Discovery system of The National Archives, London. As you type, the field suggests matching entities from the Discovery API and pulls in their reference details for consistent authority control.
+
+      - Type-ahead suggestions backed by the Discovery API
+      - Stores the entity's preferred label, concept URI and Discovery ID/URL
+      - Captures reference number, location held, title and description
+
+      Integrates with the [National Archives Discovery system](http://discovery.nationalarchives.gov.uk/).
   l10n: l10n/customDataTypeTNADiscovery.csv
   webfrontend:
     url: customDataTypeTNADiscovery.js
     css: customDataTypeTNADiscovery.css
     dependencies:
       - commons-library
-    
+
 base_url_prefix: "webfrontend"
 
 custom_types:
@@ -90,9 +104,9 @@ base_config:
         default: 4
         min: 0
         max: 23
-        position: 2 
+        position: 2
       custom_expires_days:
         type: int
         min: 1
         default: 1
-        position: 4      
+        position: 4
