@@ -14,7 +14,7 @@ The Plugins uses <http://discovery.nationalarchives.gov.uk/API/> for the autocom
 
 ## installation
 
-The latest version of this plugin can be found [here](https://github.com/programmfabrik/fylr-plugin-custom-data-type-tnadiscovery/releases/latest/download/customDataTypeTNADiscovery.zip).
+The latest version of this plugin can be found [here](https://github.com/programmfabrik/fylr-plugin-custom-data-type-tnadiscovery/releases/latest/download/fylr-plugin-custom-data-type-tnadiscovery.zip).
 
 The ZIP can be downloaded and installed using the plugin manager, or used directly (recommended).
 
