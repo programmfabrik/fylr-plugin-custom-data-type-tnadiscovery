@@ -11,18 +11,23 @@
 server:
   install:
   - l10n/customDataTypeTNADiscovery.csv
+  # assembled server-side files, sources in the order written
+  bundles:
+    - out: updater/TNADiscoveryUpdater.js
+      sources:
+      - src/updater/TNADiscoveryUpdater.js
+      - webfrontend/TNADiscoveryUtil.coffee
 webfrontend:
-  coffee1:
-  - webfrontend/CustomDataTypeTNADiscovery.coffee
-  - webfrontend/CustomDataTypeTNADiscoveryFacet.coffee
-  - webfrontend/TNADiscoveryUtil.coffee
+  # assembled into plugin.webfrontend.url, in this order:
+  # .coffee is compiled (CoffeeScript 1.x), .scss compiled,
+  # anything else taken verbatim
+  bundles:
+    - sources:
+        - webfrontend/CustomDataTypeTNADiscovery.coffee
+        - webfrontend/CustomDataTypeTNADiscoveryFacet.coffee
+        - webfrontend/TNADiscoveryUtil.coffee
   install:
   - webfrontend/customDataTypeTNADiscovery.css
-build:
-  bundles:
-  - out: updater/TNADiscoveryUpdater.js
-    sources:
-    - src/updater/TNADiscoveryUpdater.js
-    - webfrontend/TNADiscoveryUtil.coffee
-  zip_aliases:
-  - customDataTypeTNADiscovery.zip
+
+zip_aliases:
+- customDataTypeTNADiscovery.zip
